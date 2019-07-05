@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,6 +39,32 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
 
 
 
@@ -47,16 +73,12 @@
 <link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/my-favicon-32x32.png?v=7.2.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/my-favicon-16x16.png?v=7.2.0">
 
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
 
 
 
@@ -70,7 +92,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '7.2.0',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
     fancybox: false,
@@ -94,17 +116,16 @@
 
 
 
-  <meta name="description" content="tips and tricks">
-<meta property="og:type" content="article">
-<meta property="og:title" content="UE4 Optimization Tips and Tricks">
-<meta property="og:url" content="http://zhwangsh.github.io/2019/07/04/UE4-Optimization-Tips-and-Tricks/index.html">
+  <meta name="description" content="Learning Blog on Tech &amp; Art.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zheng&#39;s Blog">
+<meta property="og:url" content="http://zhwangsh.github.io/tags/UE4/index.html">
 <meta property="og:site_name" content="Zheng&#39;s Blog">
-<meta property="og:description" content="tips and tricks">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-04T05:01:17.243Z">
+<meta property="og:description" content="Learning Blog on Tech &amp; Art.">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UE4 Optimization Tips and Tricks">
-<meta name="twitter:description" content="tips and tricks">
+<meta name="twitter:title" content="Zheng&#39;s Blog">
+<meta name="twitter:description" content="Learning Blog on Tech &amp; Art.">
 
 
 
@@ -112,7 +133,7 @@
 
   
   
-  <link rel="canonical" href="http://zhwangsh.github.io/2019/07/04/UE4-Optimization-Tips-and-Tricks/">
+  <link rel="canonical" href="http://zhwangsh.github.io/tags/UE4/">
 
 
 
@@ -122,7 +143,7 @@
   };
 </script>
 
-  <title>UE4 Optimization Tips and Tricks | Zheng's Blog</title>
+  <title>Schlagwort: UE4 | Zheng's Blog</title>
   
 
 
@@ -163,14 +184,14 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -194,7 +215,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="Navigationsleiste an/ausschalten">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -221,14 +242,14 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-about">
+          <li class="menu-item menu-item-about-me">
 
     
     
@@ -237,14 +258,14 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About Me</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -253,7 +274,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Schlagwörter</a>
 
   </li>
         
@@ -269,7 +290,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Kategorien</a>
 
   </li>
 
@@ -301,159 +322,80 @@
           
             
 
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
           
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>UE4<small>Schlagwort</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhwangsh.github.io/2019/07/04/UE4-Optimization-Tips-and-Tricks/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wang Zheng">
-      <meta itemprop="description" content="Learning Blog on Tech & Art.">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zheng's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+          <a class="post-title-link" href="/2019/07/05/UE4-Optimization-Tips-and-Tricks-Part-01/" itemprop="url">
+            
+              <span itemprop="name">UE4 Optimization Tips and Tricks Part 01</span>
+            
+          </a>
         
-          <h1 class="post-title" itemprop="name headline">UE4 Optimization Tips and Tricks
+      </h2>
 
-              
-            
-          </h1>
-        
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-07-05T15:50:30+08:00" content="2019-07-05">
+          07-05
+        </time>
+      </div>
 
-        <div class="post-meta">
+    </header>
+  </article>
 
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-04 13:00:46 / Modified: 13:01:17" itemprop="dateCreated datePublished" datetime="2019-07-04T13:00:46+08:00">2019-07-04</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>tips and tricks</p>
 
       
     </div>
 
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-
-      
-      
-    </footer>
   </div>
   
   
   
-  </article>
 
+  
 
-  </div>
 
 
           </div>
           
-
-  
-
-
 
         </div>
         
@@ -478,29 +420,14 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Wang Zheng">
+            <a href="/">
+              <img class="site-author-image" itemprop="image" src="/images/my-avatar.jpg" alt="Wang Zheng">
+            </a>
             
               <p class="site-author-name" itemprop="name">Wang Zheng</p>
               <div class="site-description motion-element" itemprop="description">Learning Blog on Tech & Art.</div>
           </div>
 
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives">
-                
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-
-              
-            </nav>
           
 
           
@@ -513,23 +440,28 @@
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://github.com/zhwangsh" title="GitHub &rarr; https://github.com/zhwangsh" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/zhwangsh" title="GitHub &rarr; https://github.com/zhwangsh" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="mailto:anubis121223@gmail.com" title="E-Mail &rarr; mailto:anubis121223@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:anubis121223@gmail.com" title="E-Mail &rarr; mailto:anubis121223@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/zheng-wang-519226a1" title="Linkedin &rarr; https://www.linkedin.com/in/zheng-wang-519226a1" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
                 </span>
               
             </div>
@@ -575,7 +507,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
 
 
 
@@ -583,7 +515,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
 
 
 
@@ -679,10 +611,6 @@
 
 
   
-  <script src="/js/scrollspy.js?v=7.2.0"></script>
-<script src="/js/post-details.js?v=7.2.0"></script>
-
-
 
   
 
@@ -698,8 +626,6 @@
 
   
 
-
-  
 
 
   
