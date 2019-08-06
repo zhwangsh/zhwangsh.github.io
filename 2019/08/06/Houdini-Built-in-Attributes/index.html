@@ -116,18 +116,18 @@
 
 
 
-  <meta name="description" content="在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查阅.">
+  <meta name="description" content="在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查询。              Available Datatypes               Types Syntax    float f@name   vector2(2 floats) u@name   v">
 <meta name="keywords" content="Houdini,VEX">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Houdini Built-in Attributes">
+<meta property="og:title" content="Houdini内置属性Attributes">
 <meta property="og:url" content="http://zhwangsh.github.io/2019/08/06/Houdini-Built-in-Attributes/index.html">
 <meta property="og:site_name" content="Zheng&#39;s Blog">
-<meta property="og:description" content="在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查阅.">
+<meta property="og:description" content="在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查询。              Available Datatypes               Types Syntax    float f@name   vector2(2 floats) u@name   v">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-06T08:17:19.670Z">
+<meta property="og:updated_time" content="2019-08-06T09:58:53.245Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Houdini Built-in Attributes">
-<meta name="twitter:description" content="在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查阅.">
+<meta name="twitter:title" content="Houdini内置属性Attributes">
+<meta name="twitter:description" content="在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查询。              Available Datatypes               Types Syntax    float f@name   vector2(2 floats) u@name   v">
 
 
 
@@ -145,7 +145,7 @@
   };
 </script>
 
-  <title>Houdini Built-in Attributes | Zheng's Blog</title>
+  <title>Houdini内置属性Attributes | Zheng's Blog</title>
   
 
 
@@ -361,7 +361,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Houdini Built-in Attributes
+          <h1 class="post-title" itemprop="name headline">Houdini内置属性Attributes
 
               
             
@@ -387,7 +387,7 @@
                 
               
 
-              <time title="Created: 2019-08-06 15:26:52 / Modified: 16:17:19" itemprop="dateCreated datePublished" datetime="2019-08-06T15:26:52+08:00">2019-08-06</time>
+              <time title="Created: 2019-08-06 15:26:52 / Modified: 17:58:53" itemprop="dateCreated datePublished" datetime="2019-08-06T15:26:52+08:00">2019-08-06</time>
             </span>
           
 
@@ -444,75 +444,328 @@
       
 
       
-        <p>在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，<br>之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查阅.</p>
-<a id="more"></a>
-<div class="note default">
-            <h2>General</h2>
+        <p>在Houdini中写VEX语言的时候，不可避免得需要访问Houdini中很多内置的属性Attributes，之前在看教程的时候，作者整理了一份很详细的属性列表，故搬运至此，方便以后查询。</p>
+<div class="note info">
+            <h2>Available Datatypes</h2>
           </div>
 <table>
 <thead>
 <tr>
-<th align="center">int</th>
-<th align="center">@ptnum</th>
-<th align="center">Point Number</th>
+<th>Types</th>
+<th>Syntax</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">int</td>
-<td align="center">@numpt</td>
-<td align="center">Total number of points</td>
+<td>float</td>
+<td><font color="red">f@</font>name</td>
 </tr>
 <tr>
-<td align="center">int</td>
-<td align="center">@primnum</td>
-<td align="center">Primitive Number</td>
+<td>vector2(2 floats)</td>
+<td><font color="red">u@</font>name</td>
 </tr>
 <tr>
-<td align="center">int</td>
-<td align="center">@numprim</td>
-<td align="center">Total number of primitives</td>
+<td>vector(3 floats)</td>
+<td><font color="red">v@</font>name</td>
 </tr>
 <tr>
-<td align="center">int</td>
-<td align="center">@vtxnum</td>
-<td align="center">Vertex Number</td>
+<td>vector4(4 floats)</td>
+<td><font color="red">p@</font>name</td>
 </tr>
 <tr>
-<td align="center">int</td>
-<td align="center">@numvtx</td>
-<td align="center">Total number of vertices</td>
+<td>int</td>
+<td><font color="red">i@</font>name</td>
 </tr>
 <tr>
-<td align="center">float</td>
-<td align="center">@Time</td>
-<td align="center">Current Time, in seconds</td>
+<td>matrix2(2x2 floats)</td>
+<td><font color="red">2@</font>name</td>
 </tr>
 <tr>
-<td align="center">float</td>
-<td align="center">@TimeInc</td>
-<td align="center">Time increment per frame in seconds</td>
+<td>matrix3(3x3 floats)</td>
+<td><font color="red">3@</font>name</td>
 </tr>
 <tr>
-<td align="center">float</td>
-<td align="center">@Frame</td>
-<td align="center">Current frame</td>
+<td>matrix(4x4 floats)</td>
+<td><font color="red">4@</font>name</td>
+</tr>
+<tr>
+<td>string</td>
+<td><font color="red">s@</font>name</td>
 </tr>
 </tbody></table>
-<div class="note primary">
-            <h2>Geometry</h2>
-          </div>
-<p>primary bs-callout</p>
-<div class="note success">
-            <h2>Volumes</h2>success bs-callout
-          </div>
-
 <div class="note info">
-            <h2>Shading</h2>info bs-callout
+            <h2>General Attributes</h2>
           </div>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Attributes</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td>@ptnum</td>
+<td>Point Number</td>
+</tr>
+<tr>
+<td>int</td>
+<td>@numpt</td>
+<td>Total number of points</td>
+</tr>
+<tr>
+<td>int</td>
+<td>@primnum</td>
+<td>Primitive Number</td>
+</tr>
+<tr>
+<td>int</td>
+<td>@numprim</td>
+<td>Total number of primitives</td>
+</tr>
+<tr>
+<td>int</td>
+<td>@vtxnum</td>
+<td>Vertex Number</td>
+</tr>
+<tr>
+<td>int</td>
+<td>@numvtx</td>
+<td>Total number of vertices</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@Time</td>
+<td>Current Time, in seconds</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@TimeInc</td>
+<td>Time increment per frame in seconds</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@Frame</td>
+<td>Current frame</td>
+</tr>
+</tbody></table>
+<div class="note info">
+            <h2>Geometry Attributes</h2>
+          </div>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Attributes</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>vector</td>
+<td>@P</td>
+<td>Point/Primitive Position</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@N</td>
+<td>Point/Primitive/Vertex Normal</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@v</td>
+<td>Velocity (coule be used for motion blur or in particle systems)</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@pscale</td>
+<td>Uniform scale. Used in copy-sop or particle systems</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@scale</td>
+<td>Non-uniform scale</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@up</td>
+<td>Up vector. Used together with @N to orient point/particle/instance</td>
+</tr>
+<tr>
+<td>vector4</td>
+<td>@orient</td>
+<td>Quaternion defining the rotation of a point/particle/instance</td>
+</tr>
+<tr>
+<td>vector4</td>
+<td>@rot</td>
+<td>Quaternion defining additional rotation</td>
+</tr>
+<tr>
+<td>vecor</td>
+<td>@trans</td>
+<td>Translation of instance</td>
+</tr>
+<tr>
+<td>matrix</td>
+<td>@transform</td>
+<td>Transformation matrix (used in copy-sop)</td>
+</tr>
+<tr>
+<td>vecor</td>
+<td>@pivot</td>
+<td>Local pivot point for instance</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@lod</td>
+<td>Detail/primitive level of detail</td>
+</tr>
+<tr>
+<td>vecor</td>
+<td>@rest</td>
+<td>Rest position</td>
+</tr>
+<tr>
+<td>vecor</td>
+<td>@force</td>
+<td>Force (acting on particle)</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@age</td>
+<td>Particle age</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@life</td>
+<td>Max. Particle Life</td>
+</tr>
+</tbody></table>
+<div class="note info">
+            <h2>Volumes Attributes</h2>
+          </div>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Attributes</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>@density</td>
+<td>Density of voxel</td>
+</tr>
+<tr>
+<td>int</td>
+<td>@ix, @iy, @iz</td>
+<td>Voxel indices along each axis, ranging  from 0 to resolution-1</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@center</td>
+<td>Center of current volume</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@orig</td>
+<td>Bottom left corner of current volume</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@size</td>
+<td>Size of current volume</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@dPdx</td>
+<td>Change in position to get from one voxel to the next in x direction</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@dPdy</td>
+<td>Change in position to get from one voxel to the next in y direction</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@dPdz</td>
+<td>Change in position to get from one voxel to the next in z direction</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@BB</td>
+<td>Relative position inside bounding box, ranging from {0,0,0} to {1,1,1}</td>
+</tr>
+</tbody></table>
+<div class="note info">
+            <h2>Shading Attributes</h2>
+          </div>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Attributes</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>vector</td>
+<td>@Cd</td>
+<td>Diffuse Color</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@Alpha</td>
+<td>Alpha transparency</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@uv</td>
+<td>Point/Vertex UV coordinates</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@Cs</td>
+<td>Specular Color</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@Cr</td>
+<td>Reflective Color</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@Ct</td>
+<td>Transmissive Color</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>@Ce</td>
+<td>Emissive Color</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@rough</td>
+<td>Roughness</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@fresnel</td>
+<td>Fresnel coefficient</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@shadow</td>
+<td>Shadow Intensity</td>
+</tr>
+<tr>
+<td>float</td>
+<td>@sbias</td>
+<td>Shadow Bias</td>
+</tr>
+</tbody></table>
 
-<div class="note warning">
-            <h2>Instancing</h2>warning bs-callout
-          </div>
       
     </div>
 
@@ -690,7 +943,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">General</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">Geometry</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">Volumes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">Shading</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text">Instancing</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">Available Datatypes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">General Attributes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">Geometry Attributes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">Volumes Attributes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text">Shading Attributes</span></a></li></ol></div>
             
 
           </div>
